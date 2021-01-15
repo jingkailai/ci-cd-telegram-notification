@@ -1,0 +1,11 @@
+.login-page-sec1{
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.login-page-sec1 form{
+  width: 90%;
+}

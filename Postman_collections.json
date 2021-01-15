@@ -1,0 +1,657 @@
+{
+	"info": {
+		"_postman_id": "35c44491-3466-424d-aeb2-d93a68030b2d",
+		"name": "NUSMoney",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/users/all",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/users/user_id?user_id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"user_id"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/users/user_id?user_id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"user_id"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"name\": \"Muhammad Adnan\",\r\n    \"password\": \"test 1234\",\r\n    \"dob\": \"1960-01-20T19:00:00.000Z\",\r\n    \"email\": \"test@yahoo.com\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User's Email",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":1,\r\n    \"email\": \"updatedemail@yahoo.com\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/users/email",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User's Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\":1,\r\n    \"password\": \"stad241\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/users/password",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User's DOB",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":1,\r\n    \"dob\": \"1960-01-20T19:00:00.000Z\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/users/dob",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"dob"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User's name",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":1,\r\n    \"name\": \"Chua En Wee\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/users/password",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"updatedemail@yahoo.com\",\r\n    \"password\":\"stad241\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuYW1lIjoiQ2h1YSBFbiBXZWUiLCJlbWFpbCI6InVwZGF0ZWRlbWFpbEB5YWhvby5jb20iLCJkb2IiOiIxOTYwLTAxLTE5VDE5OjAwOjAwLjAwMFoiLCJpYXQiOjE2MDkyMzc2MTIsImV4cCI6MzIyMzY1OTIyNH0.uf8x3d1-3vEIil0nc3j7Epgyxn0qt0GzG_9o5r3t-U4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/users/verify-token",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"verify-token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "Add Account",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"user_id\":1,\r\n\"name\":\"Basic\",\r\n\"balance\":1000\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/accounts",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Account",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"account_id\":1,\r\n\"name\":\"Basic\",\r\n\"balance\":1000\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/accounts",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"account_id\":1\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/accounts/account_id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"accounts",
+								"account_id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Account By Account ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/accounts/account_id?account_id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"accounts",
+								"account_id"
+							],
+							"query": [
+								{
+									"key": "account_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Accounts By User ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/accounts/user_id?user_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"accounts",
+								"user_id"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Accounts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"user_id\":1,\r\n\"name\":\"Basic\",\r\n\"balance\":1000\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/accounts/all",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"accounts",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transactions",
+			"item": [
+				{
+					"name": "Add Transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account_id\":2,\r\n    \"transaction_type\":\"Income\",\r\n    \"transaction_amount\":100\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/transactions",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Transaction",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transaction_id\":1,\r\n    \"account_id\":2,\r\n    \"transaction_type\":\"Income\",\r\n    \"transaction_amount\":100\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/transactions",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/transactions/all",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"transactions",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Transactions By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/transactions/user_id?user_id=3",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"transactions",
+								"user_id"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transactions by Account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:4000/transactions/account_id?account_id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"transactions",
+								"account_id"
+							],
+							"query": [
+								{
+									"key": "account_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Transaction",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/transactions/id?id=2",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"transactions",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
