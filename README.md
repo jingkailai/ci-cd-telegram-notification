@@ -6,9 +6,9 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 - Github repository 
 
-** For expediency, a MERN stack web app that I've created earlier will be used to trigger the workflow here **
+**For expediency, a MERN stack web app that I've created earlier will be used to trigger the workflow here**
 
-## Creating my Telegram Bot ##
+## Creating Telegram Bot ##
 
 - How to create: https://core.telegram.org/bots
 
@@ -34,7 +34,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 ...}}}]}
 ```
 
-## On My Github Repo ##
+## Inputting Secret Variables ##
 
 - "Settings" -> "Secrets" tab 
 
@@ -43,9 +43,9 @@ How an automated Telegram notification workflow is set up for push/pull requests
 - ```TELEGRAM_TO: ##########```
 - ```TELEGRAM_TOKEN: ##########:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx```
 
-## Github Workflow Set Up ##
+## Finally, Setting Up Workflow ##
 
-- "Actions" -> "“set up a workflow yourself” link
+- Clicking "Actions" -> "set up a workflow yourself” link
 
 !![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/master/image1.png)
 
@@ -70,6 +70,6 @@ jobs:
           ${{ github.event_name }} commit in ${{ github.repository }} by "${{ github.actor }}". [${{github.sha}}@${{ github.ref }}]
 ```
           
-- Once "Start Commit" is clicked and “Commit New File” selected, a workflow will be successfully set up
+- Clicking "Start Commit" -> "selecting “Commit New File” tab
 
-- Workflow ensures a Telegram ping everytime a new push commit or pull request is triggered on the Github repo
+- Workflow is successfully set up and a Telegram ping is received everytime a new push commit or pull request is triggered on my Github repo
