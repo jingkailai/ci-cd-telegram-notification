@@ -6,13 +6,13 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 - Github repository 
 
->(For the purpose of expediency, a MERN stack web app that I've created earlier will be used to trigger the workflow here)
+** For expediency, a MERN stack web app that I've created earlier will be used to trigger the workflow here **
 
-**1. Creating my Telegram Bot**
+## Creating my Telegram Bot ##
 
 - How to create: https://core.telegram.org/bots
 
-**2. Getting Token Code**
+## Getting Token Code ##
 
 - After creating my Telegram bot, a confirmation message + token code will be received
 
@@ -34,20 +34,20 @@ How an automated Telegram notification workflow is set up for push/pull requests
 ...}}}]}
 ```
 
-**3. On My Github Repo**
+## On My Github Repo ##
 
 - "Settings" -> "Secrets" tab 
 
-!![](https://.....)
+![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/master/image2.png)
 
 - ```TELEGRAM_TO: ##########```
 - ```TELEGRAM_TOKEN: ##########:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx```
 
-**4. Github Workflow Set Up**
+## Github Workflow Set Up ##
 
 - "Actions" -> "“set up a workflow yourself” link
 
-!![](https://.....)
+!![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/master/image1.png)
 
 - Changing the default name from “main.yml” to “tg-notify.yml” to trigger workflow
 
@@ -73,9 +73,3 @@ jobs:
 - Once "Start Commit" is clicked and “Commit New File” selected, a workflow will be successfully set up
 
 - Workflow ensures a Telegram ping everytime a new push commit or pull request is triggered on the Github repo
-
-
-
-
-
-
