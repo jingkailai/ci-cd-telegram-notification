@@ -74,3 +74,5 @@ jobs:
 - Clicking "Start Commit" -> "selecting “Commit New File” tab
 
 - Workflow is successfully set up and a Telegram ping is received everytime a new push commit or pull request is triggered on my Github repo
+
+[image3](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/main/image3.png)
