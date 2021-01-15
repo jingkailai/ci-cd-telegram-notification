@@ -2,7 +2,7 @@ const mysql = require("mysql");
 
 parameters = {
   host: "localhost",
-  port: 3306,
+  port: 3300,
   user: "root",
   password: "password", // type your own password here
   database: "nusmoney", // replace with the name of the databse you used on day 1
