@@ -6,7 +6,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 - Github repository 
 
-  For expediency, a MERN stack web app that I've created earlier will be used to trigger the workflow here
+  For expediency, a MERN stack web app that I've created earlier will be used to trigger the workflow here (refer to ```master``` branch)
 
 ## Creating Telegram Bot ##
 
@@ -20,7 +20,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 - Pasting this URL on browser:
 
-```https://api.telegram.org/bot<aforementionedtokencode>/getUpdates```
+  ```https://api.telegram.org/bot<aforementionedtokencode>/getUpdates```
 
 - JSON-type response will be returned, from which the unique chat id will be revealed in the ########## format (for TELEGRAM_TO later)
 
@@ -40,8 +40,8 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 ![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/master/image2.png)
 
-- ```TELEGRAM_TO: ##########```
-- ```TELEGRAM_TOKEN: ##########:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx```
+  ```TELEGRAM_TO: ##########```
+  ```TELEGRAM_TOKEN: ##########:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx```
 
 ## Finally, Setting Up Workflow ##
 
