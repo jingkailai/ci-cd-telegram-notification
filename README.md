@@ -10,11 +10,11 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 ## Creating Telegram Bot ##
 
-- How to create: https://core.telegram.org/bots
+- Best to refer https://core.telegram.org/bots
 
 ## Getting Token Code ##
 
-- After creating my Telegram bot, a confirmation message + token code will be received
+- After creating the Telegram bot, a token code will be revealed in the confirmation message
 
 - Token code (TELEGRAM_TOKEN) for repo settings is in the ##########:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx format, where # are numbers and x are alphanumeric characters
 
@@ -53,7 +53,8 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 - Changing the default code to the following as well:
 
-```name: tg-notify
+```
+name: tg-notify
 
 on: [push, pull_request]
   
