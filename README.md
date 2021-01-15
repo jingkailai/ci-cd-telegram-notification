@@ -6,7 +6,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 - Github repository 
 
-**For expediency, a MERN stack web app that I've created earlier will be used to trigger the workflow here**
+  For expediency, a MERN stack web app that I've created earlier will be used to trigger the workflow here
 
 ## Creating Telegram Bot ##
 
