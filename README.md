@@ -10,7 +10,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 ## Creating Telegram Bot ##
 
-- Best to refer https://core.telegram.org/bots
+- Best to check out https://core.telegram.org/bots
 
 ## Getting Token Code ##
 
