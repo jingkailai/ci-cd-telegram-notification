@@ -38,7 +38,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 - "Settings" -> "Secrets" tab 
 
-![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/master/image2.png)
+![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/main/image2.png)
 
   ```TELEGRAM_TO: ##########```
   ```TELEGRAM_TOKEN: ##########:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx```
@@ -47,7 +47,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 - Clicking "Actions" -> "set up a workflow yourself” link
 
-!![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/master/image1.png)
+!![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/main/image1.png)
 
 - Changing the default name from “main.yml” to “tg-notify.yml” to trigger workflow
 
