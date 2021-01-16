@@ -41,6 +41,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 ![image2](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/main/image2.png)
 
   ```TELEGRAM_TO: ##########```
+  
   ```TELEGRAM_TOKEN: ##########:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx```
 
 ## Finally, Setting Up Workflow ##
