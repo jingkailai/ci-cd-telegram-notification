@@ -33,7 +33,7 @@ How an automated Telegram notification workflow is set up for push/pull requests
 {"id":000000001,"is_bot":false
 ...}}}]}
 ```
-## Running/Testing Telegram Bot API Using Postman (
+## Running/Testing Telegram Bot API Using Postman
 
 - Test sending a message to Telegram group with a curl: 
 
