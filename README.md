@@ -43,6 +43,8 @@ How an automated Telegram notification workflow is set up for push/pull requests
 
 ![Postmantest](https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/main/Postmantest.png)
 
+- ```Status: 200 OK``` means good to go
+
 ## Inputting Secret Variables ##
 
 - "Settings" -> "Secrets" tab 
