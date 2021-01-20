@@ -33,6 +33,12 @@ How an automated Telegram notification workflow is set up for push/pull requests
 {"id":000000001,"is_bot":false
 ...}}}]}
 ```
+## Running/Testing Telegram Bot API Using Postman (Optional)
+
+- https://api.telegram.org/bot##########:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/sendMessage
+
+![Postmantest] (https://github.com/Bensonlmx/ci-cd-telegram-notification/blob/main/Postmantest.png)
+
 
 ## Inputting Secret Variables ##
 
